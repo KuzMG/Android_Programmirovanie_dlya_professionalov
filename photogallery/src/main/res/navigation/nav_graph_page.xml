@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_page"
+    app:startDestination="@id/photoPageFragment">
+
+    <fragment
+        android:id="@+id/photoPageFragment"
+        android:name="com.example.photogallery.PhotoPageFragment"
+        android:label="PhotoPageFragment"
+        tools:layout="@layout/fragment_photo_page"/>
+    <argument
+        android:name="photo_page_uri"
+        app:argType="android.net.Uri" />
+</navigation>

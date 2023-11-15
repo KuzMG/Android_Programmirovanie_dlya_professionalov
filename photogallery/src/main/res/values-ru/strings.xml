@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Фотогалерея</string>
+    <string name="search">поиск</string>
+    <string name="clear_search">очистить поиск</string>
+    <string name="notification_channel_name">FlickrFetchr</string>
+    <string name="new_pictures_title">Новые фотографии</string>
+    <string name="new_pictures_text">У вас появились новые фотографии в PhotoGallery.</string>
+    <string name="start_polling">Начать голосование</string>
+    <string name="stop_polling">Закончить голосование</string>
+</resources>

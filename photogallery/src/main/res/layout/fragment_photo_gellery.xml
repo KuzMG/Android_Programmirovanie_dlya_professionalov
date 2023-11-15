@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="androidx.paging.LoadState"/>
+        <variable
+            name="loadState"
+            type="androidx.paging.CombinedLoadStates" />
+    </data>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/photo_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:visibleGone="@{loadState.refresh instanceof LoadState.NotLoading}"/>
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:visibleGone="@{loadState.refresh instanceof LoadState.Loading}"/>
+
+        <Button
+            android:id="@+id/button_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="refresh"
+            app:visibleGone="@{loadState.refresh instanceof LoadState.Error}"/>
+
+    </FrameLayout>
+</layout>

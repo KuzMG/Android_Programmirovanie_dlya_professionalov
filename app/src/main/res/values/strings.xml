@@ -1,0 +1,19 @@
+<resources>
+    <string name="question_capital">Москва - столица России?</string>
+    <string name="question_continent">На Земле 5 континентов?</string>
+    <string name="question_ocean">Существует ли Индийский океан?</string>
+    <string name="question_russia">Россия самая большая страна?</string>
+    <string name="warning_text">Are you sure you want to do this?</string>
+    <string name="show_answer_button">Show Answer</string>
+    <string name="cheat_button">Cheat!</string>
+    <string name="judgment_toast">Cheating is wrong.</string>
+    <string name="app_name">MyEducation</string>
+    <string name="question_australia">а??</string>
+    <string name="true_button">true</string>
+    <string name="false_button">false</string>
+    <string name="next_button">Next</string>
+    <string name="prew_button">Prev</string>
+    <string name="correct_toast">TRUE</string>
+    <string name="incorrect_toast">FALSE</string>
+    <string name="title_activity_cheat">CheatActivity</string>
+</resources>
